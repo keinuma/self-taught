@@ -28,5 +28,35 @@ def collect_songs():
     print('jpop songs: ', jpop)
 
 
+class Orange:
+    def __init__(self, w, c):
+        self.weight = w
+        self.color = c
+        self.mold = 0
+        print('Created!')
+
+    def rot(self, days, temp):
+        self.mold = days * temp
+
+
+class Rectangle:
+    def __init__(self, w, l):
+        self.width = w
+        self.len = l
+
+    def area(self):
+        return self.width * self.len
+
+    def change_size(self, w, l):
+        self.width = w
+        self.len = l
+
+
 if __name__ == '__main__':
     collect_songs()
+    or1 = Orange(10, 'dark orange')
+    print(or1.color)
+    rectangle = Rectangle(10, 20)
+    print(rectangle.area())
+    rectangle.change_size(20, 40)
+    print(rectangle.area())
