@@ -1,3 +1,9 @@
+"""
+hangman game
+>> from chapter10 import hangman
+>> hangman()
+"""
+
 from random import choice
 
 
